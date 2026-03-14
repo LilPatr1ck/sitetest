@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee — Главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="employee-header">
+    <nav>
+      <ul>
+        <li><a href="employee.html">Главная</a></li>
+        <li><a href="employee_requests.html">Мои заявления</a></li>
+        <li><a href="employee_profile.html">Профиль</a></li>
+        <li><a href="index.html">Выход</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="statement-create">
+      <h2>Создать заявление</h2>
+      <form>
+        <label>Тип заявления:</label>
+        <select>
+          <option>Отпуск</option>
+          <option>Командировка</option>
+        </select>
+
+        <label>Дата начала:</label>
+        <input type="date">
+
+        <label>Дата окончания:</label>
+        <input type="date">
+
+        <label>Причина / комментарий:</label>
+        <textarea rows="3"></textarea>
+
+        <div class="form-actions">
+          <button type="button">Сохранить в черновик</button>
+          <button type="submit">Отправить на согласование</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="statement-last">
+      <h2>Моё последнее заявление</h2>
+      <!-- Если есть активное заявление -->
+      <div class="statement-info">
+        <p><strong>Тип:</strong> Отпуск</p>
+        <p><strong>Дата создания:</strong> 2026-03-01</p>
+        <p><strong>Статус:</strong> На рассмотрении</p>
+        <button>Открыть заявление</button>
+        <button>Все заявления</button>
+      </div>
+      <!-- Если нет активного заявления
+      <div class="no-requests">
+        <p>У вас нет активных заявлений</p>
+        <button>Все заявления</button>
+      </div>
+      -->
+    </section>
+  </main>
+</body>
+</html>
